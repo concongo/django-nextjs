@@ -10,11 +10,11 @@
         "black",
     ],
     "python.formatting.blackArgs": [
-        "--line-length=110",
+        "--line-length=100",
         "--skip-string-normalization" // for double quotes
     ],
     "python.linting.flake8Args": [
-        "--max-line-length=110",
+        "--max-line-length=100",
         //    "--ignore=E402,F841,F401,E302,E305",
     ],
     "[python]": {
