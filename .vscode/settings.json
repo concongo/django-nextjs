@@ -1,0 +1,25 @@
+{
+    "python.defaultInterpreterPath": "/Users/jfgonzalezm/.pyenv/versions/3.10.6/envs/django-next/bin/python",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "pythoh.sortImports.args": [
+        "--profile",
+        "black",
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length=110",
+        "--skip-string-normalization" // for double quotes
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=110",
+        //    "--ignore=E402,F841,F401,E302,E305",
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
+}
