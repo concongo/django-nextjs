@@ -13,9 +13,8 @@ class Category(MPTTModel):
         verbose_name=_('Category Name'),
         help_text=_("It's required and must be unique"),
         max_length=255,
-        unique=True,
     )
-    slug = models.SlugField(verbose_name=_('Category safe URL'), max_length=255, unique=True)
+    slug = models.SlugField(verbose_name=_('Category safe URL'), max_length=255)
     parent = TreeForeignKey(
         'self', on_delete=models.CASCADE, null=True, blank=True, related_name='children'
     )
